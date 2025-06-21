@@ -1,0 +1,113 @@
+/* Fonts */
+@font-face {
+    font-family: MiSans;
+    src: url("/fonts/misans.ttf") format("truetype");
+}
+
+:root {
+    --web-color: #008080;
+}
+
+.cbg {
+    color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: MiSans, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+div.header {
+    background: var(--web-color);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+div.page {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    height: 100%;
+}
+
+div.footer {
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background: #202020;
+}
+
+div.brand {
+    height: 100%;
+    width: fit-content;
+
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+div.brand a {
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.r-button {
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--web-color);
+    padding: 6px;
+    line-height: 20px;
+    font-size: 16px;
+    color: var(--web-color);
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.r-button-solid {
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--web-color);
+    padding: 6px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: var(--web-color);
+    cursor: pointer;
+}
+
+.r-hp-bg {
+    background: var(--web-color);
+    height: calc(100vh - 100px);
+}
+
+.r-hp-center {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.r-hp-intro {
+    text-align: center;
+    font-size: 100px;
+}
+
+div.footer .center {
+    width: fit-content;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 30px;
+    padding: 10px 2px 10px 2px;
+}
+
+div.footer .center span {
+    line-height: 30px;
+    padding: 10px 2px 10px 2px;
+}
