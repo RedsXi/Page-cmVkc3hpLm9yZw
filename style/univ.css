@@ -4,6 +4,20 @@
     src: url("/fonts/misans.ttf") format("truetype");
 }
 
+@media screen and (max-width: 767px) {
+    :root {
+        --solid-height: 100px;
+        --title-size: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --solid-height: 50px;
+        --title-size: 30px;
+    }
+}
+
 :root {
     --web-color: #008080;
 }
@@ -25,20 +39,20 @@ body {
 
 div.header {
     background: var(--web-color);
-    height: 50px;
+    height: var(--solid-height);
     width: 100%;
     position: fixed;
 }
 
 div.page {
-    padding-top: 50px;
-    margin-bottom: 50px;
+    padding-top: var(--solid-height);
+    margin-bottom: var(--solid-height);
     height: 100%;
 }
 
 div.footer {
     bottom: 0;
-    height: 50px;
+    height: var(--solid-height);
     width: 100%;
     position: fixed;
     background: #202020;
@@ -53,7 +67,7 @@ div.brand {
 }
 
 div.brand a {
-    line-height: 30px;
+    line-height: var(--title-size);
     text-decoration: none;
     font-size: 24px;
 }
